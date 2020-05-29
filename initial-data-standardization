@@ -1,11 +1,48 @@
---substations
---add the standard fields to the table and populate those fields
+--substation
+--add the standard fields to the substation table and populate those fields
 
 alter table schema.table
- 	add cn_substat character varying (25),
+	add cn_substat character varying (25),
  	add subname character varying (50)
  
 update schema.table
 	set cn_substat = 'x'
 update schema.table
 	set subname = 'x'
+	
+	
+	
+	
+	
+--electric_span
+--add the standard fields to the electric_span table and populate those fields
+
+alter table schema.table
+	add cn_substat character varying (25),
+	add cn_feeder character varying (25),
+ 	add subname character varying (50),
+	add ring int (25),
+	add subtype int (5), 
+	add len int (25),
+	add ring_size int (5)
+	
+ 
+update schema.table
+	set cn_substat = 'x'
+update schema.table
+	set cn_feeder = 'x'
+update schema.table
+	set subname = 'x'
+update schema.table
+	set ring = 'x'
+update schema.table
+	set subtype = 'x'
+update schema.table
+	set len = 'x'
+update schema.table
+	set ring_size = 'x'
+
+
+
+
+
