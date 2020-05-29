@@ -1,1 +1,11 @@
+--substations
+--add the standard fields to the table and populate those fields
 
+alter table schema.table
+ 	add cn_substat character varying (25),
+  add subname character varying (50)
+ 
+update schema.table
+	set cn_substat = 'x'
+update schema.table
+	set subname = 'x'
