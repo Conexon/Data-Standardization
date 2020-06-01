@@ -22,9 +22,9 @@ alter table schema.table
 	add cn_feeder character varying (25),
  	add subname character varying (50),
 	add ring int (25),
-	add subtype int (5), 
-	add len int (25),
 	add ring_size int (5)
+	add subtype int (5), 
+	add length int (25)
 	
  
 update schema.table
@@ -38,7 +38,7 @@ update schema.table
 update schema.table
 	set subtype = 'x'
 update schema.table
-	set len = 'x'
+	set length = 'x'
 update schema.table
 	set ring_size = 'x'
 
