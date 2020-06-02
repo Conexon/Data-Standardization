@@ -1,2 +1,48 @@
---qc data
---
+--check that the standardized columns exist in each table
+--if a column does not exist in the table you will receive an error (ex: "ERROR: column 'cn_substat' does not exist")
+
+--substation
+select cn_substat, subname
+  from schema.table
+
+--meter
+select city, cn_feeder, cn_substat, mail_add, scada, serv_loc, state, subname, phy_add
+  from schema.table
+
+--electric_span
+select cn_feeder, cn_substat, length, ring, ring_size, subtype, subname
+  from schema.table
+  
+--structure
+select cn_feeder, cn_substat, structid, subname
+  from schema.table
+  
+
+
+--check fields that CANNOT have null values
+--if null values exist in any of these fields, you must fix the data and check again
+
+--substation
+select * from schema.table
+  where cn_substat is null
+  
+--meter
+select * from table.schema
+  where cn_substat is null 
+  or cn_feeder is null
+
+--electric_span
+select * from schema.table 
+  where cn_feeder is null
+  or cn_substat is null
+  or length is null
+  or ring is null
+  or ring_size is null
+  or subtype is null
+  
+--structure
+select * from schema.table 
+  where cn_feeder is null
+  or cn_substat is null
+  or structid is null
+ 
