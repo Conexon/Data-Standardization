@@ -52,7 +52,13 @@ select * from schema.table
   or structid is null
   
   
-  
-  4. check fields that can only have specific domain values
-  --if values other than those allowed are in the data, you must fix the data and check again
+ 
+--4. check fields that can only have specific domain values
+--if values other than those allowed are in the data, you must fix the data and check again
+
+--electric_span
+select ring, ring_size, count(*)
+  from schema.table
+  group by ring, ring_size
+
  
