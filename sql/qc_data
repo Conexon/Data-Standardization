@@ -50,4 +50,9 @@ select * from schema.table
   where cn_feeder is null
   or cn_substat is null
   or structid is null
+  
+  
+  
+  4. check fields that can only have specific domain values
+  --if values other than those allowed are in the data, you must fix the data and check again
  
