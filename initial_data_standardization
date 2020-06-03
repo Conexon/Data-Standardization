@@ -22,7 +22,7 @@ alter table schema.table
 	add cn_feeder character varying (25),
  	add subname character varying (50),
 	add ring int (25),
-	add ring_size int (5)
+	add ring_size int (5),
 	add subtype int (5), 
 	add length int (25)
 	
