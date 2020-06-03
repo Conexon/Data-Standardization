@@ -57,8 +57,15 @@ select * from schema.table
 --if values other than those allowed are in the data, you must fix the data and check again
 
 --electric_span
-select ring, ring_size, count(*)
+select ring, count(*)
   from schema.table
-  group by ring, ring_size
-
- 
+  where not ring = 0
+  and not ring = 1
+  group by ring
+  
+select ring_size, count(*)
+  from schema.table
+  where not ring_size = 0
+  and not ring_size = 96
+  and not ring_size = 144
+  group by ring_size
