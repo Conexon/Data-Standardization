@@ -21,12 +21,11 @@ alter table schema.table
 	add cn_substat character varying (25),
 	add cn_feeder character varying (25),
  	add subname character varying (50),
-	add ring int (25),
-	add ring_size int (5),
-	add subtype int (5), 
-	add length int (25)
+	add ring int,
+	add ring_size int,
+	add subtype int, 
+	add length int
 	
- 
 update schema.table
 	set cn_substat = 'x'
 update schema.table
@@ -41,8 +40,62 @@ update schema.table
 	set length = 'x'
 update schema.table
 	set ring_size = 'x'
+	
+	
 
 
 
+--meter
+--add the standard fields to the meter table and populate those fields
 
+alter table.schema
+	add city character varying,
+	add cn_feeder character varying, 
+	add cn_substat character varying, 
+	add mail_add character varying, 
+	add scada character varying,
+	add serv_loc character varying, 
+	add state character varying,
+	add subname character varying,
+	add phy_add character varying,
 
+update schema.table
+	set city = 'x'
+update schema.table
+	set cn_feeder = 'x'
+update schema.table
+	set cn_substat = 'x'
+update schema.table
+	set mail_add = 'x'
+update schema.table
+	set scada = 'x'
+update schema.table
+	set serv_loc = 'x'
+update schema.table
+	set state = 'x'
+update schema.table
+	set subname = 'x'
+update schema.table
+	set phy_add = 'x'
+	
+	
+	
+	
+	
+--structure
+--add the standard fields to the structure table and populate those fields
+
+alter table.schema
+	add cn_feeder character varying,
+	add cn_substat character varying,
+	add structid character varying, 
+	add subname character varying
+	
+update schema.table
+	set cn_feeder = 'x'
+update schema.table
+	set cn_substat = 'x'
+update schema.table
+	set structid = 'x'
+update schema.table
+	set subname = 'x'
