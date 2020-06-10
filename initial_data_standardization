@@ -48,7 +48,7 @@ update schema.table
 --meter
 --add the standard fields to the meter table and populate those fields
 
-alter table.schema
+alter table schema.table
 	add city character varying,
 	add cn_feeder character varying, 
 	add cn_substat character varying, 
@@ -85,7 +85,7 @@ update schema.table
 --structure
 --add the standard fields to the structure table and populate those fields
 
-alter table.schema
+alter table schema.table
 	add cn_feeder character varying,
 	add cn_substat character varying,
 	add structid character varying, 
