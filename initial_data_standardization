@@ -57,7 +57,7 @@ alter table.schema
 	add serv_loc character varying, 
 	add state character varying,
 	add subname character varying,
-	add phy_add character varying,
+	add phy_add character varying
 
 update schema.table
 	set city = 'x'
