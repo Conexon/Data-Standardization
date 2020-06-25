@@ -2,8 +2,8 @@
 --add the standard fields to the substation table and populate those fields
 
 alter table schema.table
-	add cn_substat character varying (25),
- 	add subname character varying (50)
+	add cn_substat character varying,
+ 	add subname character varying
  
 update schema.table
 	set cn_substat = 'x'
@@ -18,9 +18,9 @@ update schema.table
 --add the standard fields to the electric_span table and populate those fields
 
 alter table schema.table
-	add cn_substat character varying (25),
-	add cn_feeder character varying (25),
- 	add subname character varying (50),
+	add cn_substat character varying,
+	add cn_feeder character varying,
+ 	add subname character varying,
 	add ring int,
 	add ring_size int,
 	add subtype int, 
