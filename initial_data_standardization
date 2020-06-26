@@ -7,8 +7,7 @@ alter table schema.table
  
 update schema.table
 	set cn_substat = 'x'
-update schema.table
-	set subname = 'x'
+	subname = 'x'
 	
 	
 	
@@ -28,18 +27,12 @@ alter table schema.table
 	
 update schema.table
 	set cn_substat = 'x'
-update schema.table
-	set cn_feeder = 'x'
-update schema.table
-	set subname = 'x'
-update schema.table
-	set ring = 'x'
-update schema.table
-	set subtype = 'x'
-update schema.table
-	set length = 'x'
-update schema.table
-	set ring_size = 'x'
+	cn_feeder = 'x'
+	subname = 'x'
+	ring = 'x'
+	subtype = 'x'
+	length = 'x'
+	ring_size = 'x'
 	
 	
 
@@ -61,22 +54,14 @@ alter table schema.table
 
 update schema.table
 	set city = 'x'
-update schema.table
-	set cn_feeder = 'x'
-update schema.table
-	set cn_substat = 'x'
-update schema.table
-	set mail_add = 'x'
-update schema.table
-	set scada = 'x'
-update schema.table
-	set serv_loc = 'x'
-update schema.table
-	set state = 'x'
-update schema.table
-	set subname = 'x'
-update schema.table
-	set phy_add = 'x'
+	cn_feeder = 'x'
+	cn_substat = 'x'
+	mail_add = 'x'
+	scada = 'x'
+	serv_loc = 'x'
+	state = 'x'
+	subname = 'x'
+	phy_add = 'x'
 	
 	
 	
@@ -93,9 +78,6 @@ alter table schema.table
 	
 update schema.table
 	set cn_feeder = 'x'
-update schema.table
-	set cn_substat = 'x'
-update schema.table
-	set structid = 'x'
-update schema.table
-	set subname = 'x'
+	cn_substat = 'x'
+	structid = 'x'
+	subname = 'x'
