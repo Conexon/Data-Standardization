@@ -26,12 +26,12 @@ alter table schema.table
 	add length int
 	
 update schema.table
-	set cn_substat = 'x'
-	cn_feeder = 'x'
-	subname = 'x'
-	ring = 'x'
-	subtype = 'x'
-	length = 'x'
+	set cn_substat = 'x',
+	cn_feeder = 'x',
+	subname = 'x',
+	ring = 'x',
+	subtype = 'x',
+	length = 'x',
 	ring_size = 'x'
 	
 	
@@ -53,14 +53,14 @@ alter table schema.table
 	add phy_add character varying
 
 update schema.table
-	set city = 'x'
-	cn_feeder = 'x'
-	cn_substat = 'x'
-	mail_add = 'x'
-	scada = 'x'
-	serv_loc = 'x'
-	state = 'x'
-	subname = 'x'
+	set city = 'x',
+	cn_feeder = 'x',
+	cn_substat = 'x',
+	mail_add = 'x',
+	scada = 'x',
+	serv_loc = 'x',
+	state = 'x',
+	subname = 'x',
 	phy_add = 'x'
 	
 	
@@ -77,7 +77,7 @@ alter table schema.table
 	add subname character varying
 	
 update schema.table
-	set cn_feeder = 'x'
-	cn_substat = 'x'
-	structid = 'x'
+	set cn_feeder = 'x',
+	cn_substat = 'x',
+	structid = 'x',
 	subname = 'x'
