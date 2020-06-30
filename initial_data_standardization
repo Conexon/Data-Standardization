@@ -6,7 +6,7 @@ alter table schema.table
  	add subname character varying
  
 update schema.table
-	set cn_substat = 'x'
+	set cn_substat = 'x',
 	subname = 'x'
 	
 	
