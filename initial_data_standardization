@@ -40,6 +40,7 @@ update schema.table
 
 --meter
 --add the standard fields to the meter table and populate those fields
+--make sure to add scada to this table (caps, regs, devices, etc.). if you don't know what these are then reach out to another designer. standardization is NOT complete without scada.
 
 alter table schema.table
 	add city character varying,
@@ -69,6 +70,7 @@ update schema.table
 	
 --structure
 --add the standard fields to the structure table and populate those fields
+--make sure to include ug transformers to this table
 
 alter table schema.table
 	add cn_feeder character varying,
