@@ -1,4 +1,11 @@
---1. check that the standardized columns exist in each table
+--1. did you add scada (regs, caps, devices, etc.) to the meter table?
+--   did you add ug transformers to the structure table?
+--   if you answered "no" to these questions, then go back and add them
+--   if you are unsure if the coop has these, then reach out to another designer
+
+
+
+--2. check that the standardized columns exist in each table
 --if a column does not exist in the table you will receive an error (ex: "ERROR: column 'cn_substat' does not exist")
 
 --substation
@@ -19,12 +26,12 @@ select cn_feeder, cn_substat, structid, subname
   
 
 
---2. check that the data type of all required fields are correct 
+--3. check that the data type of all required fields are correct 
 --select the table, select SQL on the browser, check that data types match https://github.com/Conexon/data-processing/wiki/Data-Validation-Fields
 
 
 
---3. check fields that CANNOT have null values
+--4. check fields that CANNOT have null values
 --if null values exist in any of these fields, you must fix the data and check again
 
 --substation
@@ -54,7 +61,7 @@ select * from schema.table
   
   
  
---4. check fields that can only have specific domain values
+--5. check fields that can only have specific domain values
 --if values other than those allowed are in the data, you must fix the data and check again
 
 --electric_span
