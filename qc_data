@@ -35,6 +35,7 @@ select * from schema.table
 select * from table.schema
   where cn_substat is null 
   or cn_feeder is null
+  or scada is null
 
 --electric_span
 select * from schema.table 
