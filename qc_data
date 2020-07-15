@@ -70,3 +70,10 @@ select ring_size, count(*)
   and not ring_size = 96
   and not ring_size = 144
   group by ring_size
+  
+select subtype, count(*)
+  from schema.table
+  where not subtype = 1
+  and not subtype = 2
+  and not subtype = 3
+  and not subtype = 4
