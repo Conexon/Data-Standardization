@@ -12,7 +12,6 @@ update schema.table
 	
 	
 	
-	
 --electric_span
 --add the standard fields to the electric_span table and populate those fields
 
@@ -35,7 +34,6 @@ update schema.table
 	ring_size = 'x'
 	
 	
-
 
 
 --meter
@@ -65,8 +63,7 @@ update schema.table
 	phy_add = 'x'
 	
 	
-	
-	
+		
 	
 --structure
 --add the standard fields to the structure table and populate those fields
