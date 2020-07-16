@@ -68,18 +68,22 @@ update schema.table
 --structure
 --add the standard fields to the structure table and populate those fields
 --make sure to include ug transformers to this table
+--ugtrans should be equal to 0 or 1
+--0 = pole and 1 = ugtrans
 
 alter table schema.table
 	add cn_feeder character varying,
 	add cn_substat character varying,
 	add structid character varying, 
-	add subname character varying
+	add subname character varying,
+	add ugtrans integer
 	
 update schema.table
 	set cn_feeder = 'x',
 	cn_substat = 'x',
 	structid = 'x',
-	subname = 'x'
+	subname = 'x',
+	ugtrans = 'x'
 	
 	
 	
@@ -90,6 +94,6 @@ insert into coop.meter (city, cn_feeder, cn_substat, mail_add, scada, serv_loc, 
 	from coop.scada
 	
 --insert ug transformer rows into structures 
-insert into coop.structure (cn_feeder, cn_substat, subname, structid, geom)
-	select cn_feeder, cn_substat, subname, structid, geom
+insert into coop.structure (cn_feeder, cn_substat, subname, structid, ugtrans, geom)
+	select cn_feeder, cn_substat, subname, structid, ugtrans, geom
 	from coop.ugtransformer
