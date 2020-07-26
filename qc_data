@@ -37,6 +37,7 @@ select cn_feeder, cn_substat, structid, subname
 --substation
 select * from schema.table
   where cn_substat is null
+  or subname is null
   
 --meter
 select * from table.schema
