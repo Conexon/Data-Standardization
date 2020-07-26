@@ -68,10 +68,10 @@ select * from schema.table
 
 --meter
 select scada, count(*)
-  from schema.table
-  where not scada = 0
-  and not scada = 1
-  
+  from ntepa.meter
+  where not scada = '0'
+  and not scada = '1'
+  group by scada  
   
 --electric_span
 select ring, count(*)
