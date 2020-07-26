@@ -66,6 +66,13 @@ select * from schema.table
 --5. check fields that can only have specific domain values
 --if values other than those allowed are in the data, you must fix the data and check again
 
+--meter
+select scada, count(*)
+  from schema.table
+  where not scada = 0
+  and not scada = 1
+  
+  
 --electric_span
 select ring, count(*)
   from schema.table
