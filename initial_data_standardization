@@ -61,7 +61,8 @@ update schema.table
 	serv_loc = 'x',
 	state = 'x',
 	subname = 'x',
-	phy_add = 'x'
+	phy_add = 'x',
+	acct_num = 'x'
 	
 	
 		
