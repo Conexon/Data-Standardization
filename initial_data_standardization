@@ -14,6 +14,7 @@ update schema.table
 	
 --electric_span
 --add the standard fields to the electric_span table and populate those fields
+--1 = primary aerial, 2 = primary underground, 3 = secondary aerial, 4 = secondary underground
 
 alter table schema.table
 	add cn_substat character varying,
