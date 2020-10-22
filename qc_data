@@ -13,7 +13,7 @@ select cn_substat, subname
   from schema.table
 
 --meter
-select city, cn_feeder, cn_substat, mail_add, scada, serv_loc, state, subname, phy_add, acct_num
+select city, cn_feeder, cn_substat, mail_add, scada, serv_loc, state, subname, phy_add, acct_num, zip
   from schema.table
 
 --electric_span
