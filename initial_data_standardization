@@ -51,7 +51,8 @@ alter table schema.table
 	add state character varying,
 	add subname character varying,
 	add phy_add character varying,
-	add acct_num character varying
+	add acct_num character varying,
+	add zip character varying
 
 update schema.table
 	set city = 'x',
@@ -63,7 +64,8 @@ update schema.table
 	state = 'x',
 	subname = 'x',
 	phy_add = 'x',
-	acct_num = 'x'
+	acct_num = 'x',
+	zip = 'x'
 	
 	
 		
