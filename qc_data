@@ -10,19 +10,19 @@
 
 --substation
 select cn_substat, subname
-  from schema.table
+  from schema.substation
 
 --meter
 select city, cn_feeder, cn_substat, mail_add, scada, serv_loc, state, subname, phy_add, acct_num, zip
-  from schema.table
+  from schema.meter
 
 --electric_span
 select cn_feeder, cn_substat, length, ring, ring_size, subtype, subname
-  from schema.table
+  from schema.electric_span
   
 --structure
 select cn_feeder, cn_substat, structid, subname
-  from schema.table
+  from schema.structure
   
 
 
@@ -35,19 +35,19 @@ select cn_feeder, cn_substat, structid, subname
 --if null values exist in any of these fields, you must fix the data and check again
 
 --substation
-select * from schema.table
+select * from schema.substation
   where cn_substat is null
   or subname is null
   
 --meter
-select * from table.schema
+select * from table.meter
   where cn_substat is null 
   or cn_feeder is null
   or subname is null
   or scada is null
 
 --electric_span
-select * from schema.table 
+select * from schema.electric_span 
   where cn_feeder is null
   or cn_substat is null
   or length is null
@@ -56,7 +56,7 @@ select * from schema.table
   or subtype is null
   
 --structure
-select * from schema.table 
+select * from schema.structure 
   where cn_feeder is null
   or cn_substat is null
   or structid is null
@@ -68,27 +68,27 @@ select * from schema.table
 
 --meter
 select scada, count(*)
-  from ntepa.meter
+  from schema.meter
   where not scada = '0'
   and not scada = '1'
   group by scada  
   
 --electric_span
 select ring, count(*)
-  from schema.table
+  from schema.electric_span
   where not ring = 0
   and not ring = 1
   group by ring
   
 select ring_size, count(*)
-  from schema.table
+  from schema.electric_span
   where not ring_size = 0
   and not ring_size = 96
   and not ring_size = 144
   group by ring_size
   
 select subtype, count(*)
-  from schema.table
+  from schema.electric_span
   where not subtype = 1
   and not subtype = 2
   and not subtype = 3
