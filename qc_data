@@ -21,7 +21,7 @@ select cn_feeder, cn_substat, length, ring, ring_size, subtype, subname
   from schema.electric_span
   
 --structure
-select cn_feeder, cn_substat, structid, subname
+select cn_feeder, cn_substat, structid, subname, ugtrans
   from schema.structure
   
 
