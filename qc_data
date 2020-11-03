@@ -93,4 +93,5 @@ select subtype, count(*)
   and not subtype = 2
   and not subtype = 3
   and not subtype = 4
+  and not subtype = 5
   group by subtype
