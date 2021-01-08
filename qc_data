@@ -95,3 +95,22 @@ select subtype, count(*)
   and not subtype = 4
   and not subtype = 5
   group by subtype
+
+--6. check for invalid geometries
+--if duplicate values or incorrect spatial proximity (e.g. not within data envelope) exist in any layer.
+
+select cn_substat, cn_feeder, st_x(geom), st_y(geom)
+    from schema.table
+    where st_x(geom) < 1
+    order by st_x(geom)
+    
+select gid, cn_substat, cn_feeder, st_length(geom), st_geometrytype(geom), st_isvalid(geom)
+    from schema.electric_span
+    where st_isvalid(geom) is Null
+    order by st_length(geom) desc
+    
+select st_length(geom),cn_substat, cn_feeder, count(*)
+    from schema.electric_span
+    group by st_length(geom), cn_substat, cn_feeder
+    having count(*) > 0
+    order by count(*) desc
