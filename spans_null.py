@@ -1,7 +1,7 @@
 #span_nulls.py
 #mike byrne
 #sets the cn_substat and cn_feeder fields where they are null
-
+#To use, replace bracketed database, host, username, and password under variables
 
 
 
