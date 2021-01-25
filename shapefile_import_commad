@@ -1,0 +1,6 @@
+#Command line prompt to import shapefiles into pgadmin
+
+shp2pgsql -s 2267 C:\Users\EricRostkowski\Documents\Candian_Valley\Shapefiles\gs_service_point.shp schema.meter | psql -U conexondesign -h Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com -p 5432 -d standardize
+
+#Change C: path to file location on your computer
+#Change 'schema.meter' to the name of the schema and new layer's name in pgadmin
