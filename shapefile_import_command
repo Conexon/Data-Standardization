@@ -4,3 +4,4 @@ shp2pgsql -s 2267 C:\Users\EricRostkowski\Documents\Canadian_Valley\Shapefiles\g
 
 #Change C: path to file location on your computer
 #Change 'schema.meter' to the name of the schema and new layer's name in pgadmin
+#Change "2267" to ESPG of your projection
