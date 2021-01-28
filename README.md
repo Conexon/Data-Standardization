@@ -14,4 +14,5 @@ Substation layer must only include true substations as a point file. Metering st
 
 2.	Consumers - aka meters, service locations, etc. - are the point data showing the locations of the electric customers in your network. Consumers need to be connected to the span linear features (e.g. intersecting with the electric line data). The name of this feature class can be called anything, but the cooperative should tell Conexon explicitly which dataset represents Consumers. Attribute data for Consumers needs to contain at least the fields described below and can contain any other fields that already exist in the Coops database. The Field Name column can be called any name, but there needs at least to be a field in the feature class performing this function. 
 
-
+Client Data Standardization Notes located at link below:
+https://docs.google.com/spreadsheets/d/1LaqQctBjgub1Yu6_oHfL_KEdhICQ5l48Y1oa_NPfb0U/edit?usp=sharing
