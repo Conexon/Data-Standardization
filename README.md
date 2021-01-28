@@ -7,5 +7,11 @@ https://teams.microsoft.com/_#/files/TRAINING?threadId=19%3A879c5e18fe5943ada580
 
 Conexon design and construction requires a minimum of five input spatial data sets in order to start our design process. Those five are (1) Substations, (2) Customers, (3) Spans, (4) Poles and (5) Underground Transformers. Data delivery can be either in an ESRI File Geodatabase or individual ESRI Shapefiles. 
 Conexon requires two supplementary data sets for better network connectivity and construction efficiency. Those two are (6) SCADA devices and (7) Any Existing Fiber Data if applicable.
-Below are the requirements for these files. In ESRI speak, these would be individual Feature Classes. All spatial data need to have the same defined state plane projection in US feet. If this is not what you use within your mapping system, please let Conexon know.
+Below are the requirements for these files. In ESRI speak, these would be individual Feature Classes. All spatial data need to have the same defined state plane projection in US feet. 
+
+1.	Substations/Distribution Sources - are point data showing the location of the electric substations. Substations need to be snapped to the span linear features (minor spatial gaps are acceptable, but these should be small < 1'). The name of this feature class can be called anything, but the Coop should tell Conexon explicitly which dataset represents Substations. Attribute data for Substations needs to contain at least the fields described below and can contain any other fields that already exist in the cooperative’s database. The Field Name column can be called any name, but there needs at least to be a field in the feature class performing this function. 
+Substation layer must only include true substations as a point file. Metering stations must be excluded from this layer.
+
+2.	Consumers - aka meters, service locations, etc. - are the point data showing the locations of the electric customers in your network. Consumers need to be connected to the span linear features (e.g. intersecting with the electric line data). The name of this feature class can be called anything, but the cooperative should tell Conexon explicitly which dataset represents Consumers. Attribute data for Consumers needs to contain at least the fields described below and can contain any other fields that already exist in the Coops database. The Field Name column can be called any name, but there needs at least to be a field in the feature class performing this function. 
+
 
