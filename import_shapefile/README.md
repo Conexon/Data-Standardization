@@ -27,7 +27,7 @@ This method allows for shapefiles to be imported from your local drive to pgAdmi
 Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command).
 
 ### QGIS Connection
-Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles directly to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
+Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
 
 Instruction of how to connect pgAdmin to your QGIS can be found here.
 
