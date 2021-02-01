@@ -14,3 +14,11 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 * Check that the Format is "ESRI Shapefile".
 * Select the name and location of the shapefile.
 * Check that the CRS value is the same EPSG number as in the bottom right og QGIS.
+
+## Import Shapefiles into pgAdmin
+There are 3 ways to import shapefiles into pgAdmin. Each are detailed below.
+
+### Command Line
+This method allows for shapefiles to be imported from your local drive to pgAdmin through the Windows Command Line.
+
+Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command)
