@@ -4,7 +4,7 @@ shp2pgsql -s <prj> <your\file\path\here> <schema.yourtablename> | psql -U <yours
 
 -- Change <prj> to SRID projection number for your client.
 
--- Change <your\file\path\here> to full file path name to .shp file you wish to import.
+-- Change <your\file\path\here> to full file path name of the .shp file you wish to import.
 
 -- If working in the standardize db, change <schema.yourtablename> to your client's schema name and the layer name.
   -- example: cvec.structure
