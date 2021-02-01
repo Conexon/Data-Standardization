@@ -22,11 +22,15 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 There are 3 ways to import shapefiles into pgAdmin. Each are detailed below.
 
 ### Command Line
-This method allows for shapefiles to be imported from your local drive to pgAdmin through the Windows Command Line.
+This method allows for shapefiles to be imported from your local drive to pgAdmin through the Windows Command Terminal.
 
 Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command).
 
 ### QGIS Connection
+Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles directly to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
 
+Instruction of how to connect pgAdmin to your QGIS can be found here.
+
+Once the connection is made. All you need to do is to drag the new shapefiles into the schema of you choice.
 
 ### PostGIS Shapefile Importer/Exporter
