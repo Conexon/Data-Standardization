@@ -1,4 +1,4 @@
---Import shapefile to postgis database
+--This script allows you to import a shapefile to postgis database through your command line.
 
 shp2pgsql -s <prj> <your\file\path\here> <schema.yourtablename> | psql -U <yoursuperusername> -h <localhost> -p 5432 -d <yourdatabase>
 
