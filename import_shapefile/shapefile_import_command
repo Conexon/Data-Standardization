@@ -14,3 +14,5 @@ shp2pgsql -s <prj> <your\file\path\here> <schema.yourtablename> | psql -U <yours
 -- Change <localhost> to Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com if working in pgaws.
 
 -- Change <yourdatabase> to standardize if working in pgaws.
+
+-- The command will ask for the password to the database. Reach out to another designer if you do not already know it.
