@@ -16,7 +16,7 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 
 <img src="https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/qgis_gdb_import.PNG" width="750" height="200">
 
-* Check that the CRS value is the same EPSG number as in the bottom right og QGIS.
+* Check that the CRS value is the same EPSG number as in the bottom right of QGIS.
 
 ## Import Shapefiles into pgAdmin
 There are 3 ways to import shapefiles into pgAdmin. Each are detailed below.
@@ -24,4 +24,9 @@ There are 3 ways to import shapefiles into pgAdmin. Each are detailed below.
 ### Command Line
 This method allows for shapefiles to be imported from your local drive to pgAdmin through the Windows Command Line.
 
-Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command)
+Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command).
+
+### QGIS Connection
+
+
+### PostGIS Shapefile Importer/Exporter
