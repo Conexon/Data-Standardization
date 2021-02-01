@@ -54,6 +54,8 @@ The PostGIS shapefile Importer/Exporter allows you to import or export multiple 
 * Set Port to: "5432"
 * Set database to: "standardize"
 
+![](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/pg_importer_connection.PNG)
+
 ##### Import Shapefiles
 * Make sure the "Import" tab is selected near the top
 * Select "Add File" and select the shapefiles you with to import
@@ -61,3 +63,5 @@ The PostGIS shapefile Importer/Exporter allows you to import or export multiple 
 * Make sure the table column is what you want the layer to be named with the database
 * Set SRID to your clients SRID projection number
 * Hit Import
+
+![](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/pg_importer_view.PNG)
