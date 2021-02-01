@@ -1,7 +1,16 @@
-#Command line prompt to import shapefiles into pgadmin
+--Import shapefile to postgis database
 
-shp2pgsql -s 2267 C:\Users\EricRostkowski\Documents\Canadian_Valley\Shapefiles\gs_service_point.shp schema.meter | psql -U conexondesign -h Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com -p 5432 -d standardize
+shp2pgsql -s <prj> <your\file\path\here> <schema.yourtablename> | psql -U <yoursuperusername> -h <localhost> -p 5432 -d <yourdatabase>
 
-#Change C: path to file location on your computer
-#Change 'schema.meter' to the name of the schema and new layer's name in pgadmin
-#Change "2267" to ESPG of your projection
+-- Change <prj> to SRID projection number for your client.
+
+-- Change <your\file\path\here> to full file path name to .shp file you wish to import.
+
+-- If working in the standardize db, change <schema.yourtablename> to your client's schema name and the layer name.
+  -- example: cvec.structure
+  
+-- Change <yoursuperusername> to conexondesign if working in pgaws.
+
+-- Change <localhost> to Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com if working in pgaws.
+
+-- Change <yourdatabase> to standardize if working in pgaws.
