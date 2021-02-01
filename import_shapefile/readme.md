@@ -14,7 +14,7 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 * Check that the Format is "ESRI Shapefile".
 * Select the name and location of the shapefile.
 
-<img src="https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command" width="100" height="100">
+<img src="https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/qgis_gdb_import.PNG" width="500" height="100">
 
 * Check that the CRS value is the same EPSG number as in the bottom right og QGIS.
 
