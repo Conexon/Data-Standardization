@@ -44,3 +44,12 @@ All of the inputs above will be for the pgaws standardize database, if you are c
 Once the connection is made. All you need to do is to drag the new shapefiles into the schema of you choice.
 
 ### PostGIS Shapefile Importer/Exporter
+The PostGIS shapefile Importer/Exporter allows you to import or export multiple shapefiles between pgAdmin and your local drive. When you dowloand pgAdmin onto your computer, it should also download this app.
+
+##### Make your connection
+* Set Username to: "conexondesign"
+* Reach out to another designer for the password to pgaws if you do not already have it
+* Set Server Host to: "Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com"
+* Set database to: "standardize"
+
+##### Import/Export Shapefiles
