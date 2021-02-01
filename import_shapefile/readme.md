@@ -13,6 +13,7 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 * Right click on the layer, "Export", "Save Feature as..."
 * Check that the Format is "ESRI Shapefile".
 * Select the name and location of the shapefile.
+![QGIS GDB Importer](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/qgis_gdb_import.PNG)
 * Check that the CRS value is the same EPSG number as in the bottom right og QGIS.
 
 ## Import Shapefiles into pgAdmin
