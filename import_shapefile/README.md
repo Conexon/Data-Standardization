@@ -30,9 +30,10 @@ Script with instructions on how to run can be found [**here**](https://github.co
 Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
 
 * On the left side of QGIS, in the browser panel, locate the PostGIS elephant logo, right click and select "New Connection"
-* Set "Name" to "standardize'
-* Set "Host" to "Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com"
-* Set "Database" to "standardize"
+* Set Name to "standardize'
+* Set Host to "Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com"
+* Set Port to "5432"
+* Set Database to "standardize"
 * Hit OK
 * Username is "conexondesign"
 * Reach out to another designer for the password to pgaws if you do not already have it
@@ -50,6 +51,13 @@ The PostGIS shapefile Importer/Exporter allows you to import or export multiple 
 * Set Username to: "conexondesign"
 * Reach out to another designer for the password to pgaws if you do not already have it
 * Set Server Host to: "Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com"
+* Set Port to: "5432"
 * Set database to: "standardize"
 
-##### Import/Export Shapefiles
+##### Import Shapefiles
+* Make sure the "Import" tab is selected near the top
+* Select "Add File" and select the shapefiles you with to import
+* Set the schema to your client's schema name within the standardize db
+* Make sure the table column is what you want the layer to be named with the database
+* Set SRID to your clients SRID projection number
+* Hit Import
