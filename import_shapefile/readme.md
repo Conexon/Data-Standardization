@@ -1,4 +1,4 @@
-# Importing data to pgAdmin
+# Importing data into pgAdmin
 
 When we recieve new client data, typically the data is in a geodatabase that we cannot directly import into our pgAdmin database, so the first step is to save the data to your local drive, unzip the gdb, and then open QGIS.
 
