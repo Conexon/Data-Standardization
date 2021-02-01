@@ -29,7 +29,7 @@ Script with instructions on how to run can be found [**here**](https://github.co
 ### QGIS Connection
 Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
 
-Instruction of how to connect pgAdmin to your QGIS can be found here.
+Instruction of how to connect pgAdmin to your QGIS can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/QGIS_PG_connection.md).
 
 Once the connection is made. All you need to do is to drag the new shapefiles into the schema of you choice.
 
