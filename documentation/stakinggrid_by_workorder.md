@@ -53,6 +53,4 @@ autoIncrement()
 
   * This is an example of what this would look like 
   
-![](images/WOstaking1.png)
-
-![](images/WOstaking2.png)
+![](images/WOstaking1.png)     ![](images/WOstaking2.png)
