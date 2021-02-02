@@ -33,7 +33,7 @@
        * PDFpage = 0
    * Next, copy and paste the script below to the code block in field calculator. Make sure that the parser is set to Python and the type is number. Do **NOT** leave an extra line after “return rec”
 
-``` 
+```
 rec=0
 def autoIncrement():
    global rec
@@ -44,12 +44,11 @@ def autoIncrement():
    else:
       rec+=pInterval
    return rec
-``` 
+   ```
+
   * After you copy and paste the script to the code block and you double check that there is not an extra line after “return rec,” copy and paste the line below in the PDFpage = box
 
-``` 
-autoIncrement()
-``` 
+`autoIncrement()` 
 
   * This is an example of what this would look like 
   
