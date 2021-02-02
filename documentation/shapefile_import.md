@@ -5,6 +5,7 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 ### Opening GDB in QGIS
 
 * Under the "Layer" tab at the top of QGIS, select "Add Layer", then "Add Vector Layer..."
+* Set the source type as "Directory", leave encoding as "Automatic", set Type as "OpenFileGDB", and set the vector dateset to the .gdb folder you wish to open.
 
 <img src="images/qgis_gdb_import.PNG" width="750" height="200">
 
