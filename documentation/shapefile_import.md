@@ -5,7 +5,7 @@ When we recieve new client data, typically the data is in a geodatabase that we 
 ### Opening GDB in QGIS
 
 * Under the "Layer" tab at the top of QGIS, select "Add Layer", then "Add Vector Layer..."
-![](documentation/images/qgis_gdb_import.PNG)
+![](images/qgis_gdb_import.PNG)
 
 * Select which layers you want to bring in from the GDB and hit okay on any transformation pop-ups.
 * On the bottom right of QGIS, there should now be a number after "EPSG:". Note this number, as it is the SRID projection number of your client.
@@ -46,7 +46,7 @@ Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of
 * Username is "conexondesign"
 * Reach out to another designer for the password to pgaws if you do not already have it
 
-![](documentation/images/qgis_pg_connect.PNG)
+![](images/qgis_pg_connect.PNG)
 
 All of the inputs above will be for the pgaws standardize database, if you are connecting to your local database or any of the client databases, these will be different.
 
@@ -62,8 +62,7 @@ The PostGIS shapefile Importer/Exporter allows you to import or export multiple 
 * Set Port to: "5432"
 * Set database to: "standardize"
 
-![](documentation/images/pg_importer_connection.PNG)
-
+![](images/pg_importer_connection.PNG)
 ##### Import Shapefiles
 * Make sure the "Import" tab is selected near the top
 * Select "Add File" and select the shapefiles you with to import
@@ -72,4 +71,4 @@ The PostGIS shapefile Importer/Exporter allows you to import or export multiple 
 * Set SRID to your clients SRID projection number
 * Hit Import
 
-![](documentation/images/pg_importer_view.PNG)
+![](images/pg_importer_view.PNG)
