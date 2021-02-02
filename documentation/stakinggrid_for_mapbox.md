@@ -40,13 +40,15 @@
 
 6. Draw a rectangle/square around the buffer layer using the rectangle draw tool 
 
-![](images/mapbox_staking6.png)
+    ![](images/mapbox_staking6.png)
 
     * If you double click on the rectangle that you have drawn over your buffer, you can change the fill color to “no color” (see example below) 
+   
+    * At this point you can move the edges of the rectangle closer to the buffer more easily
 
-    * At this point you can move the edges of the rectangle closer to the buffer more easily  
 
 ![](images/mapbox_staking6b.png)
+
 
 7. Go to the drawing toolbar dropdown arrow and select “**convert graphics to features**” 
 
