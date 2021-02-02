@@ -24,7 +24,17 @@ There are 3 ways to import shapefiles into pgAdmin. Each are detailed below.
 ### Command Line
 This method allows for shapefiles to be imported from your local drive to pgAdmin through the Windows Command Terminal.
 
-Script with instructions on how to run can be found [**here**](https://github.com/Conexon/Data-Standardization/blob/master/import_shapefile/shapefile_import_command).
+
+`shp2pgsql -s <prj> <your\file\path\here> <schema.yourtablename> | psql -U <yoursuperusername> -h <localhost> -p 5432 -d <yourdatabase>`
+
+* Change <prj> to SRID projection number for your client.
+* Change <your\file\path\here> to full file path name of the .shp file you wish to import.
+* If working in the standardize db, change <schema.yourtablename> to your client's schema name and the layer name.
+  * example: cvec.structure
+* Change <yoursuperusername> to conexondesign if working in pgaws.
+* Change <localhost> to Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com if working in pgaws.
+* Change <yourdatabase> to standardize if working in pgaws.
+* The command will ask for the password to the database. Reach out to another designer if you do not already know it.
 
 ### QGIS Connection
 Connecting pgAdmin directly to QGIS is the most efficient way (in my opinion) of importing shapefiles to pgAdmin. Having this connection is nice because it allows you to view the spatial attributes of your database and make changes to the database directly through QGIS.
