@@ -17,4 +17,4 @@ Substation layer must only include true substations as a point file. Metering st
 Client Data Standardization Notes located at link below:
 https://docs.google.com/spreadsheets/d/1LaqQctBjgub1Yu6_oHfL_KEdhICQ5l48Y1oa_NPfb0U/edit?usp=sharing
 
-Instructions on how to convert new gdb data to shapefiles and import into pgAdmin can be found [**here**](https://github.com/Conexon/Data-Standardization/tree/master/import_shapefile)
+All documentation related to data standardization is located [**here**](https://github.com/Conexon/Data-Standardization/tree/master/documentation)
