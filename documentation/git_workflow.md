@@ -47,8 +47,13 @@
   *	If you want to save your edits and make them as a suggestion to the repo everyone uses
 
     *	`git status` - this will show you the files that you have changed
+    
     *	`git add *`
+    
     *	`git commit -m ‘some comment'`
+    
     *	`git push` - this will push it to the git web site - you will actually have to use this upstream switch that git tells you specifically what to do
+    
     *	Then go to the git page for that repo, and open a pull request for the changes you want to make
-      *	Make sure there is a conversation amongst your teammates about these changes. **Your changes affect all people on the team.**
+    
+      * Make sure there is a conversation amongst your teammates about these changes. **Your changes affect all people on the team.**
