@@ -16,7 +16,7 @@
 
   * Go to a GitHub repo and find the green box that says “code” and copy the URL under SSH
 
-(image)
+![](/documentation/images/git_workflow.png)
 
   * In terminal, issue the command `git clone` and paste the URL from GitHub
   
