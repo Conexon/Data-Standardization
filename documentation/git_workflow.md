@@ -30,7 +30,7 @@
   
   *	From the default branch, issue the command `git checkout -b <new_branch_name>`
   
-    *	this gives you a new branch where you want to make edits.
+     *	this gives you a new branch where you want to make edits.
     
   *	Open Sublime (or another text editor) and edit your code, saving frequently.
 
@@ -56,4 +56,4 @@
     
     *	Then go to the git page for that repo, and open a pull request for the changes you want to make
     
-      * Make sure there is a conversation amongst your teammates about these changes. **Your changes affect all people on the team.**
+        * Make sure there is a conversation amongst your teammates about these changes. **Your changes affect all people on the team.**
