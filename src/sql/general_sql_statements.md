@@ -8,22 +8,29 @@ You want to…
 
 ### Look at records:
 
-``` 
-  Select * from schema.table
-``` 
 
-* Let’s you see all records within the table
+##### Look at all records
 
 * Acts as a wildcard
 
-
 ``` 
-  Select column, column, …, 
-    from schema.table
-```  
-      
-* Let’s you see records for specific columns 
+  Select * from schema.table
+``` 
+---
 
+##### Look at specific columns
+
+  ``` 
+   Select column, column, …, 
+     from schema.table
+  ```  
+
+--- 
+
+##### Aggregate and count by chosen columns
+
+* Similar to Summary Statistics in ArcMap
+* Great tool for QCing tables after standardization is complete
 
 ``` 
 Select column, column, …, count(*) 
@@ -32,19 +39,22 @@ Select column, column, …, count(*)
   Order by column, column, … 
 ```  
   
-* Let’s you see how many records are aggregated by the columns you have chosen by number of those records
+---
 
+##### View a specific number of rows from the table
+
+* You can set any limit 
 
 ```  
 Select * from schema.table limit 10 
 ```  
   
-* Let’s you see the first ten rows, you can set any limit you want. 
 
 --- 
 
 ### Change Records:
 
+##### Populate column values
 ``` 
 Update schema.table
     set column = another_column,
@@ -53,14 +63,24 @@ Update schema.table
     set column = another column’s values,
     set column = a numeric value
 ``` 
-* Let’s you change records to be a specific
+---
+
+##### Append records from one table into another
+
+* Must include geom data
 
 ``` 
 Insert into schema.table1 (column, column, …, ..., geom) 
 select column, column, …, ..., geom from schema.table2
 ``` 
 
-* Get records from one table  to another table using specific columns that exist in both, must include geom.
+---
+
+##### Update one table based on another, depending on spatial relationship
+
+* If missing susbstation or feeder info in the structure layer, this statement allows you to pull data from the closest electrical spans 
+
+* Sets columns equal to the columns of the closest feature within the specified distance 
 
 ``` 
 Update schema.table1
@@ -68,12 +88,14 @@ Update schema.table1
   from schema.table2
   where ST_Dwithin(table1.geom, table2.geom,<distance>)
 ```  
-   
-* Allows you to update columns from one table to another depending on spatial relationship
 
 ---
 
 ### Change the table:
+
+##### Add new columns to cable
+
+* Must state data type and precision if needed
 
 ``` 
 Alter table schema.table
@@ -82,20 +104,24 @@ Alter table schema.table
   add column double precision,
 ``` 
 
-* Allows you to add new columns to your table, you must state the data type and precision if needed.
+---
   
+##### Rename Table
 ```
 Alter table schema.table rename to <new table name>
 ``` 
 
-* Allows you to rename the table
+---
+
+##### Delete/Drop a table
 
 ```
 Drop table if exists schema.table 
 ```
 
-* Allows you to drop a table
+---
 
+##### Create table with specified columns
 
 ``` 
 Create table schema.table 
@@ -106,8 +132,9 @@ Create table schema.table
   )
 ``` 
 
-* Allows you to create a table with specified columns.
+---
 
+##### Create a new table with a spatial relationship with another table
 
 ```     
 create table schema.table as
@@ -122,7 +149,5 @@ create table schema.table as
     schema.table2 as someotherabbreviation on
     ST_Intersects(someabbreviation.geom,someotherabbreviation.geom)
 ``` 
-
-* Allows you to create a new table where there is a spatial relationship between the two tables.   
-
+ 
 --- 
