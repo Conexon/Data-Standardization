@@ -78,7 +78,7 @@ select column, column, …, ..., geom from schema.table2
 
 ##### Update one table based on another, depending on spatial relationship
 
-* If missing susbstation or feeder info in the structure layer, this statement allows you to pull data from the closest electrical spans 
+* If missing substation or feeder info in the structure layer, this statement allows you to pull data from the closest electrical spans 
 
 * Sets columns equal to the columns of the closest feature within the specified distance 
 
