@@ -19,12 +19,18 @@ now = time.localtime(time.time())
 #						VARIABLES
 #******************************************************
 #
+#DB
+myDB =  "" # "tn_grant" #fcc
+
 #connection
-myDB =  "[database]" # "tn_grant" #fcc
-myHost = "[hostname]"
-myPort = "5432"
-myUser = "[username]"
-myPWord = "[password]"
+conFile = './connection.json'
+with open (conFile) as data_connection:
+	var_connection = json.load(data_connection) 
+myHost = var_connection["myHost"] #
+myPort = var_connection["myPort"] #
+myUser = var_connection["myUser"] #
+myPWord = var_connection["myPWord"] #
+
 myConn = "dbname=" + myDB + " host=" + myHost + " port=" + myPort + " user=" + myUser + " password=" + myPWord
 FNULL = open(os.devnull, 'w')
 

@@ -1,0 +1,7 @@
+{
+	"myHost": "conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com", 
+	"myPort": "5432", 
+	"myUser": "conexondataprocess", 
+	"myPWord":"conexondataprocess123!"
+}
+

@@ -13,11 +13,18 @@ import psycopg2
 import time
 import json
 
+#DB
 myDB = "standardize" # "tn_grant" #fcc
-myHost = "Conexon-design-1.ckdkui5rb8xx.us-east-1.rds.amazonaws.com"
-myPort = "5432"
-myUser = "conexondataprocess"
-myPWord = "conexondataprocess123!" 
+
+#connection
+conFile = './connection.json'
+with open (conFile) as data_connection:
+	var_connection = json.load(data_connection) 
+myHost = var_connection["myHost"] #
+myPort = var_connection["myPort"] #
+myUser = var_connection["myUser"] #
+myPWord = var_connection["myPWord"] #
+
 myConn = "dbname=" + myDB + " host=" + myHost + " port=" + myPort + " user=" + myUser + " password=" + myPWord
 FNULL = open(os.devnull, 'w')
 
