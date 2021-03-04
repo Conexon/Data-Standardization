@@ -28,7 +28,7 @@ from datetime import datetime
 startNow = datetime.now()
 print ("start time:", startNow)
 
-db = "in_scremc"
+db = "ga_cgemc"
 host = "localhost"
 port = "5432"
 user = "mike"
@@ -42,7 +42,7 @@ myConn = "dbname=" + db + " host=" + host + \
 #schema/prefix/prj
 sch = "data"	
 # global pre
-spanTB = "span"
+spanTB = "electric_span"
 
 #make database connection - so that we can use cursors to update the table
 global conn

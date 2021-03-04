@@ -1,0 +1,10 @@
+# OS Artifacts
+.DS_Store
+
+# Connection
+connection.json
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__
+*.py[cod]
+*$py.class
