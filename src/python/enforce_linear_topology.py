@@ -266,8 +266,8 @@ def insertNewRows(aTB, aGID):
 #******************************************************
 #	
 
-# singleLine()
-# driveToSplit()
+singleLine()
+driveToSplit()
 delDuplicateLines()
 
 #clean up
