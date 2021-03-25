@@ -55,14 +55,6 @@ update schema.table
 
 Make sure to add scada to this table (caps, regs, devices, etc.). If you don't know what these are then reach out to another designer. Standardization is NOT complete without scada.
 
-* **Necessary columns:**
-	* cn_feeder
-	* cn_substat
-	* scada
-	* subname
-
-* Add the other columns if data is available.
-
 ``` 
 alter table schema.table
 	add city character varying,
