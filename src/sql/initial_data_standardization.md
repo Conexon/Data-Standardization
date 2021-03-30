@@ -54,6 +54,7 @@ update schema.table
 ##### Add the standard fields to the meter table and populate those fields.
 
 Make sure to add scada to this table (caps, regs, devices, etc.). If you don't know what these are then reach out to another designer. Standardization is NOT complete without scada.
+Active meter column 0 = inactive, 1 = active; same with scada, if you don't know what this is, reach out to another designer.
 
 * **Necessary columns:**
 	* cn_feeder
@@ -75,7 +76,8 @@ alter table schema.table
 	add subname character varying,
 	add phy_add character varying,
 	add acct_num character varying,
-	add zip character varying
+	add zip character varying,
+	add active int
 ```  
 
 ``` 
@@ -90,7 +92,8 @@ update schema.table
 	subname = 'x',
 	phy_add = 'x',
 	acct_num = 'x',
-	zip = 'x'
+	zip = 'x',
+	active = 'x'
 ``` 
 
 --- 
